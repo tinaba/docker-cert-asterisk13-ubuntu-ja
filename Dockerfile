@@ -4,6 +4,7 @@ MAINTAINER cd "tinaba@ina365.com"
 
 COPY ./scripts/build.sh /tmp/
 COPY ./conf/asterisk-build/menuselect.makeopts /tmp/
+COPY ./conf/asterisk-build/menuselect.makedeps /tmp/
 COPY ./conf/fail2ban/filter.d/asterisk*.conf /tmp/
 COPY ./conf/fail2ban/jail.conf /tmp/
 COPY ./scripts/start.sh /

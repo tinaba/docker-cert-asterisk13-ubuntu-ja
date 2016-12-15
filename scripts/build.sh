@@ -24,6 +24,7 @@ git clone -b certified/13.8-cert4 https://github.com/asterisk/asterisk /tmp/aste
 cd /tmp/asterisk
 sh contrib/scripts/get_mp3_source.sh
 cp /tmp/menuselect.makeopts /tmp/asterisk/menuselect.makeopts
+cp /tmp/menuselect.makedeps /tmp/asterisk/menuselect.makedeps
 ./configure CFLAGS='-g -O2 -mtune=native' --libdir=/usr/lib/x86_64-linux-gnu
 make && make install && make samples
 
